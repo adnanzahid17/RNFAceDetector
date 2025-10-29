@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import { Text, View } from "react-native";
-
+import { useCameraPermission } from "react-native-vision-camera";
 export default function Index() {
+  const { hasPermission, requestPermission } = useCameraPermission()
+  // ask for camera permission
+  useEffect(() => {
+    if (!hasPermission) requestPermission();
+  }, [hasPermission, requestPermission]);
   return (
     <View
       style={{
