@@ -59,7 +59,7 @@
             "minSdkVersion": 26 // Set your desired minimum SDK version here
           },
           "ios": {
-            "deploymentTarget": "15.1" // Optional: Set deployment target for iOS
+            "deploymentTarget": "16.0" // Optional: Set deployment target for iOS
           }
         }
       ]
